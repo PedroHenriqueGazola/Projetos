@@ -5,20 +5,17 @@ function calcular() {
     var taxaDeRendimento = Number(document.getElementById("taxaJuros").value);
     var tempoInvestido = Number(document.getElementById("tempoInvestido").value);
     var tempoInicial = 0
-    console.log(dinheiroInicial);
+    var taxaEmPorcent = taxaDeRendimento / 100;
 
     while (tempoInicial < tempoInvestido) {
         calcularInvestimento();
         tempoInicial++;
     }
     function calcularInvestimento() {
-        var rendimento = (dinheiroInicial * taxaDeRendimento ) + dinheiroInvestidoMensal ;
+        var rendimento = (dinheiroInicial * taxaEmPorcent ) + dinheiroInvestidoMensal ;
         dinheiroInicial = rendimento
-        console.log(dinheiroInicial.toFixed(2));
     }
     var res = document.getElementById("res");
     res.innerHTML = "O valor final do investimento é: " + Number(dinheiroInicial).toFixed(2);
-    console.log(dinheiroInicial);
-    
 }
 
