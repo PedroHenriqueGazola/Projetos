@@ -5,7 +5,7 @@ function calcular() {
     var taxaDeRendimento = Number(document.getElementById("taxaJuros").value);
     var tempoInvestido = Number(document.getElementById("tempoInvestido").value);
     var tempoInicial = 0
-    var taxaEmPorcent = taxaDeRendimento / 100;
+    var taxaEmPorcent = (1 + (taxaDeRendimento / 100));
 
     while (tempoInicial < tempoInvestido) {
         calcularInvestimento();
