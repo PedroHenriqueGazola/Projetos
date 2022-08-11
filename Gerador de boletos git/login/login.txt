@@ -1,5 +1,0 @@
-ClientId
-5a799d81-0ea5-4754-a1cd-cca60b5196a1
-
-ClientSecret
-17701769-25ce-46a8-8223-a3e2b8573549
