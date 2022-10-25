@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedra, Papel ou Tesoura</title>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="header">
+            <p>Pedra, Papel ou Tesoura</p>
+        </div>
+        <div id="main">
+          <div class="main-content">
+            <div>
+              <p id="txt-user">User</p>
+              <div class="user-content">
+                <img onclick="jogar(1)" class="imgMainUser" src="img/pedra.png" alt="">
+                <img onclick="jogar(2)" class="imgMainUser" src="img/papel.png" alt="">
+                <img onclick="jogar(3)" class="imgMainUser" src="img/tesoura.png" alt="">            
+              </div>
+            </div>
+            
+            <div>VS</div>
+  
+            <div>
+              <p id="txt-pc">PC</p>
+              <div class="pc-content">
+                <img id="Pc1" class="imgMainPc" src="img/pedra.png" alt="">
+                <img id="Pc2" class="imgMainPc" src="img/papel.png" alt="">
+                <img id="Pc3" class="imgMainPc" src="img/tesoura.png" alt="">            
+              </div>
+            </div>
+          </div>
+          <div id="res">
+            Resultados
+          </div>
+        </div>
+        
+        
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
